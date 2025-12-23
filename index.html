@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elisha Otieno" />
+    <meta name="description" content="Personal portfolio website" />
+    <title>ELISHA OTIENO PORTFOLIO</title>
+    
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo"><a href="#home">Elisha Otieno</a></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <img
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="profile-img"
+          src="WhatsApp Image 2025-12-10 at 23.44.55.jpeg"
+          alt="Profile Picture"
+        />
+        <h1 data-aos="fade-up" data-aos-duration="1000">ELISHA OTIENO</h1>
+        <div data-aos="fade-up" data-aos-duration="1000" class="typewriter">
+          <span id="typed-text">STATISTICIAN | DATA ANALYST | M&E SPECIALIST</span>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          I am a collaborative, organized, and highly motivated early-career professional with a strong interest in innovation, agricultural finance, impact measurement, and partnership-driven development.
+        </p>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="hero-buttons">
+          <a href="https://wa.me/254743459276?text=Hello%20Elisha!%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you." 
+             target="_blank" 
+             class="btn btn-primary">Contact Me</a>
+           <a href="#portfolio" class="btn btn-secondary">View Projects</a>
+          <a href="Elisha_CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View CV</a>
+        </div>
+
+        <!-- CV Modal -->
+        <div id="cvModal" class="modal" aria-hidden="true" style="display:none;">
+          <div class="modal-content">
+            <button id="closeCVModal" class="modal-close">&times;</button>
+            <h3>View / Convert CV</h3>
+            <p>Upload your CV (.docx or .pdf). PDF files will be shown directly. DOCX files will be converted to HTML for preview and can be downloaded as PDF.</p>
+            <input id="cvFileInput" type="file" accept=".pdf,.docx" />
+            <div id="cvViewer" class="cv-viewer" style="margin-top:12px; max-height:60vh; overflow:auto; border:1px solid #ddd; padding:8px; background:#fff;"></div>
+            <div style="margin-top:8px;">
+              <button id="downloadPdfBtn" class="btn btn-primary" style="display:none;">Download as PDF</button>
+              <button id="closeModalBtn" class="btn" style="margin-left:8px;">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 data-aos="fade-up" data-aos-duration="1000">ABOUT ME</h2>
+      <div class="about-content">
+        <div data-aos="fade-right" data-aos-duration="1000" class="about-text">
+          <h3>Hello! I'm <span>Elisha Otieno</span></h3>
+          <p>
+            I am a highly skilled statistician and monitoring and evaluation proffesional with over 5 years of experience applying advanced statistical methodologies to drive meaningful insights and improve program outcomes. Dynamic and industrious, Elisha has a high ability to adapt quickly and efficiently to various working environments. With expertise in quantitative and qualitative data analysis, predictive modelling, and data visualization, Elisha has a proven track record of translating complex statistical data into actionable strategies that inform decision-making across various sectors, including health, research, and public administration
+          </p>
+          <p>
+            I am a collaborative, organized, and highly motivated early-career professional with a strong interest in innovation, agricultural finance, impact measurement, and partnership-driven development.
+          </p>
+          <div class="education">
+            <h4>Education</h4>
+            <p><strong>Bachelor's Degree in Statistics</strong> | Meru University</p>
+            <p><strong>Masters Degree in Data Science</strong> | Open University of Kenya</p>
+            <p><strong>Certificate in Policy and Advocacy</strong> | Washington University</p>
+            <p><strong>Monitoring and Evaluation in Global Health</strong> | Washington University</p>
+            <p><strong>Kenya Certificate of Secondary Education</strong> | Kanyawanga High School</p>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="interests">
+          <h4>My Interests</h4>
+          <div class="interest-item">
+            <i class="fas fa-code"></i>
+            <h5>Community and Development Programs</h5>
+            <p>Evaluating social protection, livelihoods and gender responsive interventions</p>
+          </div>
+          <div class="interest-item">
+            <i class="fas fa-paint-brush"></i>
+            <h5>Public Health and Nutrition Research</h5>
+            <p>Annalyzing health outcomes, risk factors and intervention impacts</p>
+          </div>
+          <div class="interest-item">
+            <i class="fas fa-mobile-alt"></i>
+            <h5>Equity Focused Analytics</h5>
+            <p>Disaggregation by gender, age, geography and vulnerability to support inclusive programming</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2 data-aos="fade-up" data-aos-duration="1000">SKILLS & TECHNOLOGIES</h2>
+      <div class="skills-container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Skills</h3>
+          <div class="skill-list">
+            <span class="skill-item">Data Analysis and Visualization</span>
+            <span class="skill-item">Monitoring, Evaluation & Learning</span>
+            <span class="skill-item">Data Quality Assuarance</span>
+            <span class="skill-item">Mentorship</span>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="skill-category">
+          <h3><i class="fas fa-server"></i> Skills</h3>
+          <div class="skill-list">
+            <span class="skill-item">Dedoose</span>
+            <span class="skill-item">Questionnaire Design</span>
+            <span class="skill-item">Quantitative Analysis</span>
+            <span class="skill-item">Qualitative Research & Analysis</span>
+            <span class="skill-item">Communication</span>
+            <span class="skill-item">Stake Holder Engagement</span>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+          <div class="skill-list">
+            <span class="skill-item">Git & GitHub</span>
+             <span class="skill-item">Stata</span>
+            <span class="skill-item">SPSS</span>
+            <span class="skill-item">Excel</span>
+            <span class="skill-item">Nvivo</span>
+            <span class="skill-item">R</span>
+            <span class="skill-item">Dedoose</span>
+            <span class="skill-item">PowerBI</span>
+            <span class="skill-item">RedCap</span>
+            <span class="skill-item">ODK</span>
+            <span class="skill-item">KoboCollect</span>
+            <span class="skill-item">SQL</span>
+            <span class="skill-item">SAS</span>
+            <span class="skill-item">Mirro</span>
+            <span class="skill-item">AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (5 Projects Only) -->
+    <section id="portfolio" class="portfolio">
+      <h2 data-aos="fade-up" data-aos-duration="1000">MY PROJECTS</h2>
+      <p class="portfolio-subtitle" data-aos="fade-up" data-aos-duration="1000">
+        Here are samples my recent projects
+      </p>
+      
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div data-aos="zoom-in" data-aos-duration="1000" class="project-card">
+  <div class="project-img">
+    <img src="project1.jpg" alt="Lwala Community Alliance" />
+  </div>
+  <div class="project-content">
+    <h3>Research Associate</h3>
+    <p class="company">Lwala Community Alliance | Migori, Homa Bay, Baringo</p>
+    
+    <div class="project-highlights">
+      <p><i class="fas fa-chart-bar"></i> Led end-to-end MEL activities and data-driven evaluations</p>
+      <p><i class="fas fa-tachometer-alt"></i> Developed dashboards that improved M&E efficiency by 90%</p>
+      <p><i class="fas fa-database"></i> Conducted data analysis using STATA and NVivo</p>
+      <p><i class="fas fa-users"></i> Directed household surveys and qualitative interviews</p>
+      <p><i class="fas fa-award"></i> Recognized as Best Data Quality Champion (2024)</p>
+    </div>
+    
+    <div class="project-tech">
+      <span>STATA</span>
+      <span>NVivo</span>
+      <span>M&E</span>
+      <span>Data Collection</span>
+      <span>Dashboards</span>
+      <span>Migori</span>
+      <span>Homa Bay</span>
+      <span>Baringo</span>
+    </div>
+    
+    <a href="#" class="project-link" target="_blank">View Project Details</a>
+  </div>
+</div>
+        
+        <!-- Project 2 -->
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="project-card">
+          <div class="project-img">
+            <img src="project2.jpg" alt="Kenya National Bureau of Statistics" />
+          </div>
+          <div class="project-content">
+            <h3>Monitoring and Evaluation Officer</h3>
+            <p>Responsible for monitoring and evaluation activities.</p>
+            <div class="project-tech">
+              <span>Kenya National Bureau of Statistics</span>
+            </div>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="project-card">
+          <div class="project-img">
+            <img src="project3.jpg" alt="Kenya National Bureau of Statistics" />
+          </div>
+          <div class="project-content">
+            <h3>Field Supervisor</h3>
+            <p>Supervised field activities and data collection</p>
+            <div class="project-tech">
+              <span>Kenya National Bureau of Statistics</span>
+            </div>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+          <div class="project-img">
+            <img src="project4.jpg" alt="Program Officer" />
+          </div>
+          <div class="project-content">
+            <h3>Program Officer</h3>
+            <p>Worked on Mother Child Health program</p>
+            <div class="project-tech">
+              <span>AMREC - Isiolo</span>
+            </div>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+       <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+  <div class="project-img">
+    <img src="project0.jpg" alt="Dev-Afrique Development Advisors" />
+  </div>
+  <div class="project-content">
+    <h3>Data Analyst & M&E Associate</h3>
+    <p class="company">Dev-Afrique Development Advisors | Abuja, Nigeria</p>
+    
+    <div class="project-details">
+      <p><strong>UMBRELA Project – Monitoring & Evaluation Associate</strong></p>
+      <div class="project-highlights">
+        <p><i class="fas fa-chart-line"></i> Multi-country analysis (Nigeria, DRC, Kenya) using R, STATA, SPSS, Python</p>
+        <p><i class="fas fa-tachometer-alt"></i> Developed dashboards & indicators on Mirro platform</p>
+        <p><i class="fas fa-file-alt"></i> Created evidence-based reports and data analysis plans</p>
+        <p><i class="fas fa-users"></i> Mentored interns and coordinated project teams</p>
+        <p><i class="fas fa-briefcase"></i> Supported Development Bank of Nigeria project</p>
+      </div>
+      
+      <div class="achievements">
+        <p><strong>Key Achievements:</strong></p>
+        <ul>
+          <li>Automated indicator tracking on Mirro platform</li>
+          <li>Strengthened data systems, improving reporting efficiency</li>
+          <li>Developed comprehensive data analysis plans</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="project-tech">
+      <span>R</span>
+      <span>STATA</span>
+      <span>SPSS</span>
+      <span>Python</span>
+      <span>Mirro</span>
+      <span>M&E</span>
+      <span>Nigeria</span>
+      <span>DRC</span>
+      <span>Kenya</span>
+    </div>
+    
+    <a href="#" class="project-link" target="_blank">View Project Details</a>
+  </div>
+</div>
+
+          <!-- Project 4 -->
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="project-card">
+  <div class="project-img">
+    <img src="Project4.jpg" alt="The Action Foundation - Ibuka Project" />
+  </div>
+  <div class="project-content">
+    <h3>Program & Data Officer</h3>
+    <p class="company">The Action Foundation - Ibuka Project</p>
+    <p><strong>Senior MEL Consultant</strong> | Google-funded STEM program for girls with disabilities</p>
+    
+    <div class="project-highlights">
+      <p><i class="fas fa-check-circle"></i> Managed qualitative research for Google-funded STEM initiative</p>
+      <p><i class="fas fa-check-circle"></i> Designed research tools and supervised field teams</p>
+      <p><i class="fas fa-check-circle"></i> Conducted thematic analysis and produced actionable insights</p>
+      <p><i class="fas fa-check-circle"></i> Led data cleaning, analysis, and comparative baseline/endline studies</p>
+    </div>
+    
+    <div class="project-tech">
+      <span>Qualitative Research</span>
+      <span>Thematic Analysis</span>
+      <span>MEL</span>
+      <span>Google Funded</span>
+      <span>STEM</span>
+      <span>Disability Inclusion</span>
+    </div>
+    
+    <a href="#" class="project-link" target="_blank">View Project Details</a>
+  </div>
+</div>
+
+        <!-- Project 5 -->
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="project-card">
+          <div class="project-img">
+            <img src="project5.jpg" alt="Trainer" />
+          </div>
+          <div class="project-content">
+            <h3>Trainer</h3>
+            <p>Provided training in relevant fields.</p>
+            <div class="project-tech">
+              <span>Trainer</span>
+            </div>
+            <a href="#" class="project-link" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 data-aos="fade-up" data-aos-duration="1000">GET IN TOUCH</h2>
+      <p data-aos="fade-up" data-aos-duration="1000" class="contact-subtitle">
+        Feel free to contact me for collaborations or just to say hello!
+      </p>
+      
+      <div class="contact-container">
+        <div data-aos="fade-right" data-aos-duration="1000" class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>otienoelisha42@gmail.com</p>
+              <p>elisha.otieno@dev.africa</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+254 743 459276</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Nairobi, Kenya</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h3>Follow Me</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/elisha-otieno-1248882b9/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank" aria-label="CodePen Profile"><i class="fab fa-codepen"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-left" data-aos-duration="1000" class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Elisha Otieno | All rights reserved.</p>
+        <a href="#home" class="back-to-top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Libraries for DOCX -> HTML and HTML -> PDF conversion -->
+    <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    
+    <!-- JavaScript File -->
+    <script>
+      // CV modal and file handling
+      (function(){
+        const openBtn = document.getElementById('openCVModal');
+        const modal = document.getElementById('cvModal');
+        const closeBtn = document.getElementById('closeCVModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const fileInput = document.getElementById('cvFileInput');
+        const viewer = document.getElementById('cvViewer');
+        const downloadBtn = document.getElementById('downloadPdfBtn');
+
+        function openModal(){ modal.style.display = 'block'; modal.setAttribute('aria-hidden','false'); }
+        function closeModal(){ modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); viewer.innerHTML = ''; downloadBtn.style.display = 'none'; fileInput.value = ''; }
+
+        openBtn && openBtn.addEventListener('click', openModal);
+        closeBtn && closeBtn.addEventListener('click', closeModal);
+        closeModalBtn && closeModalBtn.addEventListener('click', closeModal);
+
+        fileInput && fileInput.addEventListener('change', async function(e){
+          const file = e.target.files && e.target.files[0];
+          if(!file) return;
+          viewer.innerHTML = '';
+          downloadBtn.style.display = 'none';
+
+          if(file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf')){
+            const url = URL.createObjectURL(file);
+            const iframe = document.createElement('iframe');
+            iframe.src = url;
+            iframe.style.width = '100%';
+            iframe.style.height = '60vh';
+            iframe.onload = () => URL.revokeObjectURL(url);
+            viewer.appendChild(iframe);
+          } else if(file.name.toLowerCase().endsWith('.docx')){
+            // Read file as ArrayBuffer for mammoth
+            const arrayBuffer = await file.arrayBuffer();
+            try{
+              const result = await mammoth.convertToHtml({arrayBuffer: arrayBuffer});
+              const html = result.value; // string
+              viewer.innerHTML = '<div class="docx-content">' + html + '</div>';
+              downloadBtn.style.display = 'inline-block';
+              downloadBtn.onclick = () => {
+                // Use html2pdf to generate PDF from the displayed HTML
+                const element = viewer.querySelector('.docx-content');
+                if(!element) return;
+                const opt = { margin: 0.5, filename: 'Elisha_CV.pdf', html2canvas: { scale: 2 }, jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' } };
+                html2pdf().set(opt).from(element).save();
+              };
+            } catch(err){
+              viewer.textContent = 'Failed to convert DOCX file. Please try another file.';
+            }
+          } else {
+            viewer.textContent = 'Unsupported file type. Please upload a .pdf or .docx file.';
+          }
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html> 
