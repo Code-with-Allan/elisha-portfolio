@@ -420,6 +420,19 @@ h2::after {
     transform: scale(1.05);
 }
 
+
+.project-photo-action {
+    object-position: center 15%;
+}
+
+.project-photo-kemri {
+    object-position: center 10%;
+}
+
+.project-photo-lwala {
+    object-position: center 35%;
+}
+
 .project-content {
     padding: 1.5rem;
     flex-grow: 1;
